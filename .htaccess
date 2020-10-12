@@ -1,0 +1,37 @@
+# Bảo vệ file .htaccess
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+ 
+# Rewrite url
+RewriteEngine on
+
+
+#Url Home
+RewriteRule ^[/\s]*$ index.php?c=home&%{QUERY_STRING} [NC,L]
+
+RewriteRule ^gioi-thieu/?([a-zA-Z0-9_-]+)*$ index.php?c=gioithieu&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^chuong-trinh/?([a-zA-Z0-9_-]+)*$ index.php?c=chuongtrinh&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^thi-quoc-te/?([a-zA-Z0-9_-]+)*$ index.php?c=thiquocte&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^lich-hoc-hoc-phi/?([a-zA-Z0-9_-]+)*$ index.php?c=lichhochocphi&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^tin-tuc/?([a-zA-Z0-9_-]+)*(\.html)?$ index.php?c=tintuc&code=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^tuyen-dung/?([a-zA-Z0-9_-]+)*$ index.php?c=tuyendung&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^cau-hoi/?([a-zA-Z0-9_-]+)*$ index.php?c=cauhoi&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^tu-van/?([a-zA-Z0-9_-]+)*$ index.php?c=tuvan&a=$1&%{QUERY_STRING} [NC,L]
+
+# Url admin
+RewriteRule ^admin/?([a-zA-Z0-9_-]+)*$ admin.php?c=dashboards&a=$1
+RewriteRule ^ad-login/?([a-zA-Z0-9_-]+)*$ admin.php?c=login&a=$1
+RewriteRule ^ad-blog/?([a-zA-Z0-9_-]+)*$ admin.php?c=blog&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^ad-upload/?([a-zA-Z0-9_-]+)*$ admin.php?c=upload&a=$1&%{QUERY_STRING} [NC,L]
+
+RewriteRule ^[/\s]*/?([a-zA-Z0-9_-]+)*(\.html)?$ index.php?c=home&code=$1&%{QUERY_STRING} [NC,L]
+
+
+
+
+
+
+
+

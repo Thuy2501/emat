@@ -1,0 +1,12 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.hidden-smartphone{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.hidden-pc{
+		display:none;
+	}
+}

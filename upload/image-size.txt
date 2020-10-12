@@ -1,0 +1,4 @@
+image-slide-home: 800x600
+Block hoc tap: 800x800
+
+gioi-thieu: 800x600

@@ -1,0 +1,457 @@
+.mailring-alo-phone.mailring-alo-static {
+    opacity:.6
+}
+
+.mailring-alo-phone.mailring-alo-hover,.mailring-alo-phone:hover {
+    opacity:1
+}
+
+.mailring-alo-ph-circle {
+    width:160px;
+    height:160px;
+    bottom:20px;
+    left:20px;
+    position:absolute;
+    background-color:transparent;
+    border-radius:100% !important;
+    border:2px solid rgba(30,30,30,0.4);
+    border:2px solid #bfebfc 9;
+    opacity:.1;
+    -webkit-animation:mailring-alo-circle-anim 1.2s infinite ease-in-out;
+    animation:mailring-alo-circle-anim 1.2s infinite ease-in-out;
+    transition:all .5s;
+    -webkit-transform-origin:50% 50%;
+    -ms-transform-origin:50% 50%;
+    transform-origin:50% 50%
+}
+
+.mailring-alo-phone.mailring-alo-active .mailring-alo-ph-circle {
+    -webkit-animation:mailring-alo-circle-anim 1.1s infinite ease-in-out!important;
+    animation:mailring-alo-circle-anim 1.1s infinite ease-in-out!important
+}
+
+.mailring-alo-phone.mailring-alo-static .mailring-alo-ph-circle {
+    -webkit-animation:mailring-alo-circle-anim 2.2s infinite ease-in-out!important;
+    animation:mailring-alo-circle-anim 2.2s infinite ease-in-out!important
+}
+
+.mailring-alo-phone.mailring-alo-hover .mailring-alo-ph-circle,.mailring-alo-phone:hover .mailring-alo-ph-circle {
+    border-color:#28256e;
+    opacity:.5
+}
+
+.mailring-alo-phone.mailring-alo-green.mailring-alo-hover .mailring-alo-ph-circle,.mailring-alo-phone.mailring-alo-green:hover .mailring-alo-ph-circle {
+    border-color:#28256e ;
+    border-color:#baf5a7;
+    opacity:.5
+}
+
+.mailring-alo-phone.mailring-alo-green .mailring-alo-ph-circle {
+    border-color:#28256e5c;
+    opacity:.5
+}
+
+.mailring-alo-phone.mailring-alo-gray.mailring-alo-hover .mailring-alo-ph-circle,.mailring-alo-phone.mailring-alo-gray:hover .mailring-alo-ph-circle {
+    border-color:#ccc;
+    opacity:.5
+}
+
+.mailring-alo-phone.mailring-alo-gray .mailring-alo-ph-circle {
+    border-color:#28256e ;
+    opacity:.5
+}
+
+.mailring-alo-ph-circle-fill {
+    width:100px;
+    height:100px;
+    bottom:50px;
+    left:50px;
+    position:absolute;
+    background-color: #000;
+    border-radius:100% !important;
+    border:2px solid transparent;
+    -webkit-animation:mailring-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation:mailring-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition:all .5s;
+    -webkit-transform-origin:50% 50%;
+    -ms-transform-origin:50% 50%;
+    transform-origin:50% 50%
+}
+
+.mailring-alo-phone.mailring-alo-active .mailring-alo-ph-circle-fill {
+    -webkit-animation:mailring-alo-circle-fill-anim 1.7s infinite ease-in-out!important;
+    animation:mailring-alo-circle-fill-anim 1.7s infinite ease-in-out!important
+}
+
+.mailring-alo-phone.mailring-alo-static .mailring-alo-ph-circle-fill {
+    -webkit-animation:mailring-alo-circle-fill-anim 2.3s infinite ease-in-out!important;
+    animation:mailring-alo-circle-fill-anim 2.3s infinite ease-in-out!important;
+    opacity:0!important
+}
+
+.mailring-alo-phone.mailring-alo-hover .mailring-alo-ph-circle-fill,.mailring-alo-phone:hover .mailring-alo-ph-circle-fill {
+    background-color:rgba(0,175,242,0.5);
+    background-color:#28256e 9;
+    opacity:.75!important
+}
+
+.mailring-alo-phone.mailring-alo-green.mailring-alo-hover .mailring-alo-ph-circle-fill,.mailring-alo-phone.mailring-alo-green:hover .mailring-alo-ph-circle-fill {
+    background-color:rgba(117,235,80,0.5);
+    background-color:#baf5a7 9;
+    opacity:.75!important
+}
+
+.mailring-alo-phone.mailring-alo-green .mailring-alo-ph-circle-fill {
+    background-color:rgba(255,87,34,0.5);
+    background-color:#a6e3fa 9
+}
+
+.mailring-alo-phone.mailring-alo-gray.mailring-alo-hover .mailring-alo-ph-circle-fill,.mailring-alo-phone.mailring-alo-gray:hover .mailring-alo-ph-circle-fill {
+    background-color:rgba(204,204,204,0.5);
+    background-color:#ccc 9;
+    opacity:.75!important
+}
+
+.mailring-alo-phone.mailring-alo-gray .mailring-alo-ph-circle-fill {
+    background-color:rgba(117,235,80,0.5);
+    opacity:.75!important
+}
+
+.mailring-alo-ph-img-circle {
+    width:60px;
+    height:60px;
+    bottom:140px;
+    left:70px;
+    position:absolute;
+    background:rgba(30,30,30,0.1) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFEUlEQVRoge2ZTYiWVRTH/2cYhmEQUZGIQUQiokWLEAmJCJEoK4lyES4GCxGJsBINCxdBRERESLgYIiQkIiIkQoRcGQgRZqvsixARmd5EZBBR02H+vxbPfafnve995vM1N/PfzHnu3HPu+brnnntfaRGLWMQi7iSiTQACHpC0KSKeA9ZKGuxiiMiHZgQwxTdP+h9JpyV9LelbSb926AH0AZuAn2xPAtimjTp9hzEJ/Ag8DvTVPb8J+OV2rdrkjPnStn8GHrOtAO6T9Jmkh/Kwl3CHUqhEfx8RL/RL2ihpbYOylnQa+Csi2tG6Hco00cMRsU5SX8F564AN/ZKeltRfUL4t7FZEvCbpVu79+ncT3UY9orOkByV9AfSVjJM0EBFPCjif52th035pe7gprXqJFOVVto/k+hToswJa9cEGXAM+Ae7+HwwYBj61fWMWG3tMQCtTtgWM5wy2rwEf0y5ft0f5PuBQWivHeK6r7VbJgBPAZttnG6JxEFjZY8Vle6Xt0ZrD6s770/ZTwMlsvNXXFlD/K+lM2ri/F9bbJmkvsKyHNqyIiDciYoS0UdubNSLOSHolIn5P3+qYUwjLCWANMABsAS4U9sYV4O1eaQ+8m2TmOG/7maTLPcDJ2abQmprwDYU5bbwJLF2A4kuBt0ppA4wBj9Tm3lNKoVIV6jAgMb9IrdzWInIZ2AMsmafy+4DLhYJxDhjJ5k9FoDa/OwLtFMqYB4GdwKVsLmls5zwM2JXLS7gIbKc6yIoG1NafOYUyIVupylmOSaoodbXfBRlDtncAk4VqcxnY0sA3/xSqCZHt1+ueqx8qMxmRIrnd9lghbS7a3k3Dac9CUigTtATYT1Y1ktDztoseTLzP275QiOA41X5o3Es0pNDUOdC2fBbt8oCk5UB/m7fNB6yW9Hk6dAZqiw/YflbS4YhYVVBuQNJyFZrK6RAR6qt/NIWvtlCfpL2SdkoayvmS8YMR8RHVJak/Kbc5Ij5UuqKSdaARMSTpJeBVGloVug/bCrZb7jyoiilE1ae8BFwtpECOSaob3qO2NwJ/pLFpb1u2rwA7SkbkKZR4/9vENWFdBtheknJ0vLDwmO1jtm8WFLpEuWrdsH3U9ljhf+O299gems6AhJmrEFXl2Z2qRO69FlXNXkHVbs+mBb4BjCaenbZb+Zw0titzYkcZnTJgphSyvYXqxM0xCexoewpYBRwGJvKJNfk3gUPAcOIZAl62PdkQvc3zTiH+q9kXC968ZLvDQ2mRZbZHbU8UGsAJqla8q3eiakdKTmoB25Iuc0shYAQ413Ba7rNdbOJsrwCOZF6dAL6yvaLEQ9UX7bc9tV9qvGeBrXNNoZGGDQZV9zhtBwrcB3xN1S5MAEeAe6fjsb0MeCdTvk1foGpjZpVCl6nuwLmgK8B70ymRGTFo+2FgPbPokWp871Mu1dfoTrNiCnXQybirwAdAMQV6CWAlcCCt2ahXosdk+2zThBpGk+Dbrb9sC7iLqizP9Mz4W39EnKLa4R130eQNRcR3kg5KWilpzkbMx+jEcyAi7pc0dSsrPJ6d6pd0NCKelTQI3U98wOqI+Lz2PSdl5vOWWsPS+iW+rpek65KOtQ+g4zOk0IIwi9N5rq/T2D5GOhAFrKW7xvZs4V4iKX8CeLAjVlRGHCWVsMzaBRvRI/oq8E1d+Y4EtT0cEeslPaHqyb2jI1wIWNgz+3VVPzEdj4gfIuLvXum1iEUsYhELw78w35od+wsXwQAAAABJRU5ErkJggg==) no-repeat center center;
+    border-radius:100% !important;
+    border:2px solid transparent;
+    /*-webkit-animation:mailring-alo-circle-img-anim 1s infinite ease-in-out;
+    animation:mailring-alo-circle-img-anim 1s infinite ease-in-out;*/
+    -webkit-transform-origin:50% 50%;
+    -ms-transform-origin:50% 50%;
+    transform-origin:50% 50%
+}
+
+.mailring-alo-ph-img-circle:hover{
+    -webkit-animation:mailring-alo-circle-img-anim 1s infinite ease-in-out;
+    animation:mailring-alo-circle-img-anim 1s infinite ease-in-out;
+}
+
+.mailring-alo-phone.mailring-alo-active .mailring-alo-ph-img-circle {
+    -webkit-animation:mailring-alo-circle-img-anim 1s infinite ease-in-out!important;
+    animation:mailring-alo-circle-img-anim 1s infinite ease-in-out!important
+}
+
+.mailring-alo-phone.mailring-alo-static .mailring-alo-ph-img-circle {
+    -webkit-animation:mailring-alo-circle-img-anim 0 infinite ease-in-out!important;
+    animation:mailring-alo-circle-img-anim 0 infinite ease-in-out!important
+}
+
+.mailring-alo-phone.mailring-alo-hover .mailring-alo-ph-img-circle,.mailring-alo-phone:hover .mailring-alo-ph-img-circle {
+    background-color:#28256e
+}
+
+.mailring-alo-phone.mailring-alo-green.mailring-alo-hover .mailring-alo-ph-img-circle,.mailring-alo-phone.mailring-alo-green:hover .mailring-alo-ph-img-circle {
+    background-color:#28256e;
+    background-color:#28256e 9
+}
+
+.mailring-alo-phone.mailring-alo-green .mailring-alo-ph-img-circle {
+    background-color:#28256e;
+    background-color:#28256e 9
+}
+
+.mailring-alo-phone.mailring-alo-gray.mailring-alo-hover .mailring-alo-ph-img-circle,.mailring-alo-phone.mailring-alo-gray:hover .mailring-alo-ph-img-circle {
+    background-color:#ccc
+}
+
+.mailring-alo-phone.mailring-alo-gray .mailring-alo-ph-img-circle {
+    background-color:#28256e
+}
+
+@-webkit-keyframes mailring-alo-circle-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.5) skew(1deg);
+        -webkit-opacity:.1
+    }
+
+    30% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+        -webkit-opacity:.5
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+        -webkit-opacity:.1
+    }
+}
+
+@-webkit-keyframes mailring-alo-circle-fill-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+        opacity:.2
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+}
+
+@-webkit-keyframes mailring-alo-circle-img-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity:0;
+        -webkit-transform:translate3d(100%,0,0);
+        -ms-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+
+    100% {
+        opacity:1;
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity:0;
+        -webkit-transform:translate3d(100%,0,0);
+        -ms-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+
+    100% {
+        opacity:1;
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none
+    }
+}
+
+@-webkit-keyframes fadeOutRight {
+    0% {
+        opacity:1
+    }
+
+    100% {
+        opacity:0;
+        -webkit-transform:translate3d(100%,0,0);
+        -ms-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+}
+
+@keyframes fadeOutRight {
+    0% {
+        opacity:1
+    }
+
+    100% {
+        opacity:0;
+        -webkit-transform:translate3d(100%,0,0);
+        -ms-transform:translate3d(100%,0,0);
+        transform:translate3d(100%,0,0)
+    }
+}
+
+@-webkit-keyframes mailring-alo-circle-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.5) skew(1deg);
+                transform:rotate(0) scale(.5) skew(1deg);
+        opacity:.1
+    }
+
+    30% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.5
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg);
+        opacity:.1
+    }
+}
+
+@keyframes mailring-alo-circle-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.5) skew(1deg);
+                transform:rotate(0) scale(.5) skew(1deg);
+        opacity:.1
+    }
+
+    30% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.5
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg);
+        opacity:.1
+    }
+}
+
+@-webkit-keyframes mailring-alo-circle-fill-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg);
+        opacity:.2
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+}
+
+@keyframes mailring-alo-circle-fill-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg);
+        opacity:.2
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(.7) skew(1deg);
+                transform:rotate(0) scale(.7) skew(1deg);
+        opacity:.2
+    }
+}
+
+@-webkit-keyframes mailring-alo-circle-img-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes mailring-alo-circle-img-anim {
+    0% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform:rotate(-25deg) scale(1) skew(1deg);
+                transform:rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform:rotate(25deg) scale(1) skew(1deg);
+                transform:rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform:rotate(0) scale(1) skew(1deg);
+                transform:rotate(0) scale(1) skew(1deg)
+    }
+}
+
+.mypage-alo-phone {
+    position: fixed;
+    left: -50px;
+    bottom: -45px;
+    visibility: visible;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 200000!important;
+}

@@ -1,0 +1,33 @@
+# Bảo vệ file .htaccess
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+ 
+# Rewrite url
+RewriteEngine on
+
+
+#Url Home
+RewriteRule ^[/\s]*$ index.php?c=home
+RewriteRule ^login/?([a-zA-Z0-9_-]+)*$ index.php?c=login&a=$1
+RewriteRule ^contact/?([a-zA-Z0-9_-]+)*$ index.php?c=contact&a=$1
+RewriteRule ^about/?([a-zA-Z0-9_-]+)*$ index.php?c=about&a=$1
+
+RewriteRule ^project/?([a-zA-Z0-9_-]+)*$ index.php?c=project&a=$1
+RewriteRule ^recruitment/?([a-zA-Z0-9_-]+)*$ index.php?c=recruitment&a=$1
+RewriteRule ^training/?([a-zA-Z0-9_-]+)*$ index.php?c=training&a=$1
+RewriteRule ^service/?([a-zA-Z0-9_-]+)/?([a-zA-Z0-9_-]+)*$ index.php?c=service&a=$1&id=$2
+RewriteRule ^error/?([a-zA-Z0-9_-]+)*$ index.php?c=error&a=$1
+
+RewriteRule ^blogview/?([\da-zA-Z_-]+)\.html$ index.php?c=blogview&id=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^blog/?([a-zA-Z0-9_-]+)*$ index.php?c=blog&category=$1&%{QUERY_STRING} [NC,L]
+
+
+# Url admin
+RewriteRule ^admin/?([a-zA-Z0-9_-]+)*$ admin.php?c=dashboards&a=$1
+RewriteRule ^ad-login/?([a-zA-Z0-9_-]+)*$ admin.php?c=login&a=$1
+RewriteRule ^ad-blog/?([a-zA-Z0-9_-]+)*$ admin.php?c=blog&a=$1&%{QUERY_STRING} [NC,L]
+RewriteRule ^ad-upload/?([a-zA-Z0-9_-]+)*$ admin.php?c=upload&a=$1&%{QUERY_STRING} [NC,L]
+
+RewriteRule ^[/\s]*/?([a-zA-Z0-9_-]+)*(\.html)?$ index.php?c=home&code=$1&%{QUERY_STRING} [NC,L]
