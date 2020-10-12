@@ -8,3 +8,4 @@ include_once(PATH_SYSTEM.'/core/VV_Common.php');
 
 
 VV_load();
+/////////////////
